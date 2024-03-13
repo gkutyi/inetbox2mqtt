@@ -20,7 +20,7 @@
 # s.connect("<yourSSID>","<YourWifiPW>")
 # print('network config:', s.ifconfig())
 # import mip
-# mip.install("github:mc0110/inetbox2mqtt/bootloader/main.py", target = "/")
+# mip.install("github:gkutyi/inetbox2mqtt/bootloader/main.py", target = "/")
 # 
 # import main
 #
@@ -35,7 +35,7 @@ import mip
 time.sleep(3)
 
 # bootloader for the whole suite
-tree = "github:mc0110/inetbox2mqtt"
+tree = "github:gkutyi/inetbox2mqtt"
 
 # mip.install(tree)
 
