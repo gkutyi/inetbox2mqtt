@@ -54,7 +54,7 @@ def update_repo():
         ["/lib/", "connect.py", "/lib"],
         ["/src/", "update.py", "/"],
         ]
-
+#test
 
     for i in range(len(env)):
         errno = 1
