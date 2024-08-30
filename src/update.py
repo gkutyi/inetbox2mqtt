@@ -36,7 +36,7 @@ def update_repo():
 
     env = [
         ["/src/", "args.py", "/"],
-        ["/src/", "mqtt_async2.py", "/lib"],
+        ["/lib/", "mqtt_async2.py", "/lib"],
 #        ["/src/", "vector.py", "/"],
 #        ["/src/", "spiritlevel.py", "/"],
 #        ["/src/", "duocontrol.py", "/"],
