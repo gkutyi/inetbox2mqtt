@@ -51,11 +51,11 @@ def unquote(s):
     if '%' not in s:
         return s
     s = s.split("%")
-#    print(s)
+    print(s)
     a = s[0].encode("utf-8")
     for i in s[1:]:
-#        print(bytearray.fromhex(i[:2]))
-#        print(i[2:],i[2:].encode("utf-8"))
+        print(bytearray.fromhex(i[:2]))
+        print(i[2:],i[2:].encode("utf-8"))
         a = a + bytearray.fromhex(i[:2]) + i[2:].encode("utf-8")
     return a.decode("utf-8")    
 
@@ -201,6 +201,7 @@ async def cp(r):
             json[i] = "1"
         else:
             json[i] = unquote(r.args[i])
+    print(json)        
     gh.connect.store_creds(json)
     await r.write("HTTP/1.1 200 OK\r\n\r\n")
     await r.write(gh.handleMessage("Credentials are written", "/", "Back",("5","/")))
